@@ -9,7 +9,7 @@ The program requires two command-line arguments as strings:
 
 As for the structure of languages.json: The top level is a map of languages. Every language in languages.json is itself a map that must contain two keys: "paradigms" and "roots". Paradigms are maps from the relevant gloss identifier to the conlang translation. Roots are lists of three strings, in the order of: in-language root name, then identifier (name used in gloss), and finally the assigned paradigm.
 
-#IMPORTANT: Irregularly inflected roots must have root identifier before the first dot.
+##IMPORTANT: Irregularly inflected roots must have root identifier before the first dot.
 
 However, irregularly inflected roots can still be inflected further using basic affixes. For example, if the word 'shout' is inflected using the following paradigm:
 {
