@@ -1,6 +1,9 @@
 A gloss-to-language translator intended for conlangs.
+
 Required language features are entered in the languages.json file.
+
 Each root is assigned a paradigm, which indicates how a word is inflected. This can include irregular inflection, as shown in the example.
+
 If the language uses different inflection in different locations of a sentence, it is recommended to use in-gloss cases.
 
 The program requires two command-line arguments as strings:
