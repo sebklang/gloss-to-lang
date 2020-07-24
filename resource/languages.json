@@ -1,0 +1,28 @@
+{
+    "example language": {
+        "paradigms": {
+            "test paradigm": {
+                "1sg": "me",
+                "2sg.gen": "lo",
+                "3pl.acc": "tven"
+            },
+            "other paradigm": {
+                "1sg": "tre",
+                "2sg.gen": "bvi",
+                "3pl.acc": "aliv"
+            },
+            "paradigm for irregular inflection": {
+                "shout.1sg": "ytren",
+                "shout.2sg.gen": "yratim",
+                "shout.3pl.acc": "ytrum",
+                "3sg": "re"
+            }
+        },
+        "roots": [
+            ["blilm", "run", "test paradigm"],
+            ["tlern", "jump", "other paradigm"],
+            ["trek", "speak", "test paradigm"],
+            ["ytra", "shout", "paradigm for irregular inflection"]
+        ]
+    }
+}
