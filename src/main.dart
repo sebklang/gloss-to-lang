@@ -8,8 +8,8 @@ void main(List<String> args) async {
   var paradigms;
 
   try {
-    var ljson = jsonDecode(
-        await File('resource/languages.json').readAsString())[args[0]];
+    var ljson =
+        jsonDecode(await File('bin/languages.json').readAsString())[args[0]];
     for (var args in ljson['roots']) roots.add(Root.argsList(args));
     paradigms = ljson['paradigms'];
   } on NoSuchMethodError {
