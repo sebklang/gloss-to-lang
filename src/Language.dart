@@ -1,4 +1,5 @@
 import 'Root.dart';
+import 'Constants.dart';
 
 class Language {
   Map<String, dynamic> paradigms;
@@ -23,17 +24,23 @@ class Language {
         }
       });
 
+      if (root == null) return ERROR_MESSAGE;
+
       void addMorphemes(int from, int to) {
         for (var i = from; i < to; i++)
           result += this.paradigms[root.paradigm][morphemes[i]];
       }
 
-      if (isRegularRoot) {
-        addMorphemes(0, rootIndex);
-        result += root.rootName;
-        addMorphemes(rootIndex + 1, morphemes.length);
-      } else
-        addMorphemes(0, morphemes.length);
+      try {
+        if (isRegularRoot) {
+          addMorphemes(0, rootIndex);
+          result += root.rootName;
+          addMorphemes(rootIndex + 1, morphemes.length);
+        } else
+          addMorphemes(0, morphemes.length);
+      } on ArgumentError {
+        return ERROR_MESSAGE;
+      }
       result += ' ';
     }
     return result.trim();
