@@ -24,7 +24,7 @@ class Language {
         }
       });
 
-      if (root == null) return ERROR_MESSAGE;
+      if (root == null) return GENERIC_ERROR_MESSAGE;
 
       void addMorphemes(int from, int to) {
         for (var i = from; i < to; i++)
@@ -39,7 +39,7 @@ class Language {
         } else
           addMorphemes(0, morphemes.length);
       } on ArgumentError {
-        return ERROR_MESSAGE;
+        return GENERIC_ERROR_MESSAGE;
       }
       result += ' ';
     }

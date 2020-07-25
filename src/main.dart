@@ -20,7 +20,7 @@ void main(List<String> args) async {
     for (var properties in ljson['roots']) roots.add(Root.argsList(properties));
     paradigms = ljson['paradigms'];
   } on NoSuchMethodError {
-    print(ERROR_MESSAGE);
+    print(GENERIC_ERROR_MESSAGE);
     exit(1);
   }
 
