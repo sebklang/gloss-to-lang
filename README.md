@@ -19,7 +19,7 @@ However, irregularly inflected roots can still be inflected further using basic 
 ```
 Then the gloss 'shout.2sg.gen-3sg' will translate to 'yratimre', as it should.
 
-In the case of an error, make sure to control that these arguments are in the right order, and that the gloss is compatible with the specified language.
+In the case of an error, make sure to control that the command-line arguments are in the right order, and that the gloss is compatible with the specified language.
 
 Other than that, the example language in languages.json should be enough to understand how it works.
 
