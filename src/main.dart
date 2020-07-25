@@ -6,7 +6,7 @@ import 'Constants.dart';
 
 void main(List<String> args) async {
   List<Root> roots = [];
-  var paradigms;
+  Map<String, dynamic> paradigms;
 
   if (args.length != 2) {
     print(
