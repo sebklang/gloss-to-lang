@@ -9,3 +9,5 @@ build/
 doc/api/
 
 .vscode/
+
+.bin/gloss-to-lang.exe
