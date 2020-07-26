@@ -10,4 +10,4 @@ doc/api/
 
 .vscode/
 
-.bin/gloss-to-lang.exe
+bin/gloss-to-lang.exe
