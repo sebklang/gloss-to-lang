@@ -4,15 +4,15 @@ import 'Language.dart';
 import 'Root.dart';
 import 'Constants.dart';
 
-void main(List<String> args) async {
+void main(/*List<String> args*/) async {
   List<Root> roots = [];
   Map<String, dynamic> paradigms;
 
-  if (args.length != 3) {
+  /*if (args.length != 3) {
     print(
         "gloss-to-lang requires exactly three arguments: the language.json file path, the language and the gloss string.");
     exit(1);
-  }
+  }*/
 
   try {
     var ljson = jsonDecode(
