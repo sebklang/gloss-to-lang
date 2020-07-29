@@ -8,15 +8,14 @@ void main(List<String> args) async {
   List<Root> roots = [];
   Map<String, dynamic> paradigms;
 
-  if (args.length != 2) {
+  if (args.length != 3) {
     print(
-        "gloss-to-lang requires exactly two arguments: the language and the gloss string.");
+        "gloss-to-lang requires exactly three arguments: the language.json file path, the language and the gloss string.");
     exit(1);
   }
 
   try {
-    var ljson =
-        jsonDecode(await File('bin/languages.json').readAsString())[args[0]];
+    var ljson = jsonDecode(await File(args[0]).readAsString())[args[1]];
     for (var properties in ljson['roots']) roots.add(Root.argsList(properties));
     paradigms = ljson['paradigms'];
   } on NoSuchMethodError {
@@ -26,5 +25,5 @@ void main(List<String> args) async {
 
   var lang = Language(paradigms, roots);
 
-  print(lang.glossToLang(args[1]));
+  print(lang.glossToLang(args[2]));
 }
