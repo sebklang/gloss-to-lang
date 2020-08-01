@@ -30,7 +30,7 @@ void main(List<String> args) async {
     print(GENERIC_ERROR_MESSAGE);
     exit(1);
   } on FileSystemException {
-    print("Cannot find language file.");
+    print('Cannot find language file "$langsFilePath".');
   }
 
   var lang = Language(paradigms, roots);
