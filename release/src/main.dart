@@ -29,6 +29,8 @@ void main(List<String> args) async {
   } on NoSuchMethodError {
     print(GENERIC_ERROR_MESSAGE);
     exit(1);
+  } on FileSystemException {
+    print("Cannot find language file.");
   }
 
   var lang = Language(paradigms, roots);
