@@ -3,7 +3,7 @@ A gloss-to-language translator intended for conlangs.
 Required language features are entered in the `bin/languages.json` file. Each root is assigned a paradigm, which indicates how a word is inflected. This can include irregular inflection, as shown in the example. If the language uses different inflection in different locations of a sentence, it is recommended to use in-gloss cases.
 
 The program requires two command-line arguments as strings:
-1. The JSON file path (called `languages.json` by default) containing language information.
+1. The JSON file path containing language information. (use `_` to use the default `languages.json`)
 2. The language to translate into, as specified in languages.json.
 3. The gloss to translate.
 
